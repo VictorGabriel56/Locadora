@@ -3,6 +3,7 @@
  */
 package br.com.locadora.controller;
 
+import java.util.Date;
 import java.util.List;
 
 import javax.validation.Valid;

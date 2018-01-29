@@ -5,39 +5,31 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import br.com.locadora.model.Cliente;
-import br.com.locadora.model.Usuario;
 import br.com.locadora.repository.ClienteRepository;
-import br.com.locadora.repository.filtros.FiltroUsuario;
 
 
 @Service
 public class ClienteService {
-	
 	@Autowired
 	private ClienteRepository clienteRepository;
 	
-	public List<Cliente> findAll(){
+	public List<Cliente> listar(){
 		return this.clienteRepository.findAll();
 	}
 	
-	public Usuario findOne(FiltroUsuario filtro) {
-		return this.clienteRepository.findOne(filtro);
+	public Cliente search(Long id) {
+		return this.clienteRepository.findOne(id);
 	}
-	
+
 	public Cliente save(Cliente cliente) {
 		return this.clienteRepository.save(cliente);
+	}
+	
+	public void delete(Long id) {
+		this.clienteRepository.delete(id);
 	}
 	
 	public void remove(Long id) {
 		this.clienteRepository.delete(id);
 	}
-	
-	public void edit(Cliente cliente) {
-		this.clienteRepository.saveAndFlush(cliente);
-	}
-	
-	public void remover(Long idCliente) {
-		this.clienteRepository.delete(idCliente);
-	}
-	
 }

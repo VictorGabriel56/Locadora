@@ -34,7 +34,6 @@ public class Usuario implements Serializable {
 	/**
 	 * serial
 	 */
-	
 	private static final long serialVersionUID = 1L;
 
 	@Id
@@ -123,5 +122,9 @@ public class Usuario implements Serializable {
 		this.ativo = ativo;
 	}
 
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
 
+	
 }

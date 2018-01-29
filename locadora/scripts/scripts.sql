@@ -1,3 +1,5 @@
+-- INSERT DE USUÁRIOS --
+
 insert into usuario (id,nome,login,email,ativo,senha) values (1,'Carlos Barbosa', 'cbgomes', 'cbgomes@gmail.com',false,'$2a$10$VDGLYxdBu0av0eYYwh/X.etCYErb0dDV6hoRDyOMlRPFg6hn5B7Cy'); 
 insert into usuario (id,nome,login,email,ativo,senha) values (2,'Xico Pereira','xicop','xico@gmail.com',false,'$2a$10$X0Q69sPcGDQE1QF25VBdHeifxp/oW26sFeLShrhQ9WFjeJTcn.JlW');
 insert into usuario (id,nome,login,email,ativo,senha) values (3,'Zão Pereira','zepa','zepa@gmail.com',false,'$2a$10$X0Q69sPcGDQE1QF25VBdHeifxp/oW26sFeLShrhQ9WFjeJTcn.JlW$2a$10$X0Q69sPcGDQE1QF25VBdHeifxp/oW26sFeLShrhQ9WFjeJTcn.JlW');
@@ -56,3 +58,6 @@ insert into grupo_permissoes (grupos_id, permissoes_id) values (4, 4);
 insert into grupo_permissoes (grupos_id, permissoes_id) values (4, 5);
 insert into grupo_permissoes (grupos_id, permissoes_id) values (4, 6);
 insert into grupo_permissoes (grupos_id, permissoes_id) values (5, 6);
+
+
+

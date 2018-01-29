@@ -8,12 +8,9 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
-
-import br.com.locadora.model.Grupo;
 import br.com.locadora.model.Usuario;
 import br.com.locadora.repository.UsuarioRepository;
 import br.com.locadora.repository.filtros.FiltroUsuario;
-
 
 
 /**

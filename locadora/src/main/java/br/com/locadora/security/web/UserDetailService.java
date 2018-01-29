@@ -26,7 +26,6 @@ import br.com.locadora.service.UsuarioService;
  * @author cbarbosag
  *
  */
-
 @Component
 public class UserDetailService implements UserDetailsService {
 
